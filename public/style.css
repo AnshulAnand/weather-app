@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, rgb(255, 167, 35), rgb(255, 97, 35));
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 400px;
+  width: 720px;
+}
+.container .header {
+  height: 5em;
+  width: 100%;
+  background-color: #333;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.container .header .icon {
+  background-color: #FFF;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  position: relative;
+  padding: 10px;
+  top: 15px;
+  left: calc(50% - 60px);
+  z-index: 100;
+  overflow: hidden;
+}
+.container .header .icon img {
+  width: 100%;
+  height: 100%;
+  -webkit-animation-name: animation;
+          animation-name: animation;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.container .weather {
+  width: 100%;
+  padding: 1em;
+  background-color: #FFF;
+  padding-top: 100px;
+}
+.container .weather h2 {
+  font-size: 2em;
+  margin-bottom: 0.2em;
+}
+.container .weather h3 {
+  color: #333;
+  font-size: 1.3em;
+}
+.container .body {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: #FFF;
+}
+.container .body .temp, .container .body .wind, .container .body .precipitaion {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.container .body .temp h3, .container .body .wind h3, .container .body .precipitaion h3 {
+  padding-bottom: 10px;
+}
+.container .body .temp p, .container .body .wind p, .container .body .precipitaion p {
+  color: #333;
+  font-size: 24px;
+}
+.container .input {
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #FFF;
+  border-top: 1px solid #CCC;
+  display: flex;
+  flex-direction: row;
+}
+.container .input input {
+  margin: 10px;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+}
+.container .input div {
+  height: 100%;
+  border-bottom-right-radius: 10px;
+}
+.container .input div button {
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  height: 100%;
+  width: 100px;
+  background-color: #333;
+  color: #FFF;
+}
+
+.input div button:hover {
+  background-color: #404040;
+}
+
+@-webkit-keyframes animation {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.8;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes animation {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.8;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .container {
+    margin-top: 100px;
+  }
+  .container .body {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

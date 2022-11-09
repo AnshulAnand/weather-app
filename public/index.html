@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon">
+                <img id="icon" src="./images/cloud-solid.svg">
+            </div>
+        </div>
+        <div class="weather">
+            <h2 id="data-status">Weather</h2>
+            <h3 id="data-location">Location</h3>
+        </div>
+        <div class="body">
+            <div class="temp">
+                <h3>Temperature</h3>
+                <p id="data-temperature">TBD</p>
+            </div>
+            <div class="wind">
+                <h3>Wind</h3>
+                <p id="data-wind">TBD</p>
+            </div>
+            <div class="precipitaion">
+                <h3>Precipitaion</h3>
+                <p id="data-precipitation">TBD</p>
+            </div>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Enter location, Eg- New Delhi" class="city-search" required/>
+            <div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
