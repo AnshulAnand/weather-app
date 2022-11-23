@@ -8,7 +8,7 @@ npm install
 
 ## Run app
 ```
-node server
+npm start
 ```
 
 - Please use your API key.
